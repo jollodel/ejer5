@@ -1,0 +1,68 @@
+td{
+	padding-left:2em;
+}
+#foto-perfil{
+	width:25%;
+	margin: auto;
+	text-align: center;
+}
+
+.img-profile {
+	width: 150px;
+	height: 150px;
+	border-radius: 100%;
+}
+
+#otra_info{
+	padding-left:3em;
+}
+
+#otra_info  div{
+	padding-left:1em;
+}
+h2{
+	margin-top:2em;
+}
+
+.pr-5 {
+	font-size: 30px;
+}
+
+#datosPersonales {
+	width:75%;
+	margin: auto;
+	text-align: left;	
+}
+
+.campo {
+	width: 100%;
+	font-size: 20px;
+}
+
+mat-cell{
+	padding: 2px;
+}
+
+table {
+	width: 100%;
+	margin-bottom: 30px;
+  }
+  
+  .mat-header-cell {
+	text-align: center;
+  }
+
+mat-card {
+	margin-top: 20px;
+	padding: 30px 0px !important;
+}
+
+button{
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.icono{
+	text-align: center;
+}
+

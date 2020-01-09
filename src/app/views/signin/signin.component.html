@@ -1,0 +1,49 @@
+
+<mat-card>
+    <mat-card-header>
+      <mat-card-title>Login</mat-card-title>
+    </mat-card-header>
+    
+  <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+    <div *ngIf="errorLogin" class="alert alert-danger">
+      <button type="button" class="close" data-dismiss="alert">
+        &times;
+      </button>
+      There is an error in email or password
+    </div>
+    <mat-form-field>
+      <input matInput
+        type="text"
+        id="email"
+        formControlName="email"
+        class="form-control"
+        [ngClass]="{
+          'is-invalid': submitted && loginForm.controls.email.errors
+        }"
+        placeholder="Username *"
+      />
+    </mat-form-field>
+    <br>
+    <mat-form-field>
+      <input matInput
+        type="password"
+        id="password"
+        formControlName="password"
+        class="form-control"
+        [ngClass]="{
+          'is-invalid': submitted && loginForm.controls.password.errors
+        }"
+        placeholder= "Password *"
+      />
+    </mat-form-field>
+    <ul>
+      <li>
+        <button mat-flat-button color="primary"[disabled]="loginForm.invalid" class="btn btn-primary" >
+          LOGIN
+        </button>
+      </li>
+      <li>
+          <a class="password" routerLink="/forgot-password">FORGOT PASSWORD</a>
+      </li>
+      </ul>
+</form>

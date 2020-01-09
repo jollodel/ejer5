@@ -1,0 +1,27 @@
+<!-- <div class="app-admin-wrap" [dir]="layoutConf.dir"> -->
+<!-- Header for top navigation layout -->
+<!-- ONLY REQUIRED FOR **TOP** NAVIGATION LAYOUT -->
+<!--   <app-header-top
+    *ngIf="layoutConf.navigationPos === 'top'"
+    [notificPanel]="notificationPanel"
+  >
+  </app-header-top> -->
+  <mat-toolbar color="primary" class="fix-nav">
+    <button type="button" mat-icon-button class="visible-md" (click)="toggleSidebar()">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+    </button>
+    <div class="nav-brand">
+        SB Admin Material
+    </div>
+    <span class="nav-spacer"></span>
+    <button mat-icon-button routerLink="/">
+        <mat-icon>exit_to_app</mat-icon>
+    </button>
+</mat-toolbar>
+<app-sidebar></app-sidebar>
+<div class="main-container">
+  <router-outlet></router-outlet>
+</div>
+  
+
+<!-- </div> -->
